@@ -65,25 +65,67 @@ body {
   margin-bottom: 1rem;
 }
 
-.logo {
-  width: 100%;
-  height: 100%;
-  padding: 0.7rem;
+form {
+  max-width: 40%;
+  margin: 1rem;
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.links {
-  text-decoration: none;
-  color: grey;
-  text-align: center;
-  line-height: 3rem;
-  font-size: 1rem;
-  margin-top: 1.5rem;
-}
-
-.links :first-child {
-  font-size: 3rem;
+.form-input {
   color: white;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  line-height: 2rem;
+  background-color: transparent;
+  border: 2px solid #ca3b5a;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 1.3rem;
   margin-bottom: 1.5rem;
+  width: 100%;
+  outline: 0;
+}
+
+.form-input:focus {
+  border: 3px solid #69f5ee;
+}
+
+textarea {
+  height: 15rem;
+}
+
+.submit-button {
+  width: 100%;
+  background: #ca3b5a;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: 700;
+}
+
+.submit-button:hover {
+  background: #69f5ee;
+  color: #ca3b5a;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+#map {
+  height: 10rem;
+  width: 10rem;
 }
 
 .container {
@@ -91,7 +133,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   max-width: 100vw;
-  background-color: var(--color-primary-light);
 }
 
 .sidebar {
@@ -105,17 +146,17 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #1b1b1b;
+  background-color: #141414;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 9.5%;
-          flex: 0 0 9.5%;
+      -ms-flex: 0 0 9%;
+          flex: 0 0 9%;
 }
 
 .content {
   color: white;
   padding: 8rem;
   font-size: 4.5rem;
-  background-color: #141414;
+  background-color: #1b1b1b;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -138,5 +179,25 @@ body {
           justify-content: center;
   background-color: black;
   padding: 2rem;
+}
+
+.logo-container a {
+  text-decoration: none;
+  color: grey;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+.logo-container a :first-child {
+  font-size: 3rem;
+  color: white;
+}
+
+.logo-container img {
+  width: 100%;
+  height: 100%;
+  padding: 0.7rem;
 }
 /*# sourceMappingURL=main.css.map */

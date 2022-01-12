@@ -16,14 +16,15 @@
             
 
             <div class="logo-container">
-                <div>
-                    <img class="logo" src="../img/logo.svg" alt="">
-                </div>
-                <a class="links" href="../index.html">
-                    <p>Zoia</p>
-                    <p>Web Developer</p>
+                <a href="../index.html">
+                    <div>
+                        <img class="logo" src="../img/logo.svg" alt="">
+                    </div>
+                    <div>
+                        <p>Zoia</p>
+                        <p>Web Developer</p>
+                    </div>
                 </a>
-                
             </div>
 
             <ul class="side-nav">
@@ -54,9 +55,35 @@
         </nav>
         <main class="content">
             <h1>Contact me</h1>
+
+                <form>
+                    <input type="text" name="name" class="form-input" placeholder="Name">
+                    <input type="email" name="email" class="form-input" placeholder="Email">
+                    <!-- <input type="text" name="sunject" class="form-input" placeholder="Subject"> -->
+                    <textarea name="text" class="form-input" placeholder="Message"></textarea>
+                    <input class="submit-button" type="submit" value="SUBMIT">
+                </form>
+    
+                <div id="map"></div>
+
+
+            
+
         </main>
 
     </div>
+
+    <!-- <script>
+        function initMap() {
+            var location = {lat: 51.690, lng: 5.303};
+            var map = new google.maps.Map(document.getElementById("map"), {zoom: 8, center: location});
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc17_DQiJn4gISy8ZZU6koGOfLjnycEr4&callback=initMap"></script> -->
 
 </body>
 </html>
